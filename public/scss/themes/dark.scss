@@ -1,0 +1,4 @@
+@import  '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+@include theme('dark', $border-color-dark, $label-color-light, $form-bg-dark, $body-bg-dark);

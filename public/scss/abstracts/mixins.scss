@@ -1,0 +1,35 @@
+@mixin flex($a, $b, $c){
+  display: flex;
+  flex-wrap: $a;
+  justify-content: $b;
+  align-items: $c;
+}
+
+@mixin theme($theme-name, $border-color, $form-label-color, $form-bg, $body-bg){
+  .#{$theme-name}{
+    body{
+      background-color: $body-bg;
+    }
+    form{
+      color: $form-label-color;
+      background-color: $form-bg;
+      input{
+        border: 1px solid $border-color;
+      }
+    }
+    input[type="submit"]{
+      background-color: $body-bg;
+      color: $form-label-color;
+    }
+    input[type="submit"]:hover, button:hover{
+      color: $form-bg;
+      background-color: $form-label-color;
+    }
+    button{
+      background-color: $form-bg;
+      color: $form-label-color;
+      border: 1px solid $border-color;
+    }
+
+  }
+}

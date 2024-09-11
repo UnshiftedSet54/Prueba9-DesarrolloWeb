@@ -3,7 +3,7 @@ const app = express()
 const path = require('path')
 const port = process.env.PORT | 3001
 
-let registros = []
+let registros = {}
 
 app.use(express.json())
 
@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 app.post('/registro', (req, res) => {
   const data = req.body
-  registros = [...registros, data]
+  registros = {...data}
   res.status(200).json({msg: 'OK', data})
   console.log(registros)
 })

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.form-input {
+  margin: 0.5rem auto;
+}
+.form-input label {
+  display: block;
+}
+.form-input input {
+  margin: 0.2rem 0;
+  height: 1.2rem;
+  width: 100%;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 1px 1px 2px black;
+  outline: none;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.form-input label, .form-input input {
+  font-size: 0.9rem;
+}
+.form-input input[type=submit] {
+  height: 100%;
+  width: 100%;
+}
+.form-input input[type=submit]:hover {
+  cursor: pointer;
+}
+
+.theme-button {
+  padding: 0.2rem 0.8rem;
+  margin: 1.1rem 1rem;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 4px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.theme-button:hover {
+  cursor: pointer;
+}
+
+body, .theme-select {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 2rem auto;
+}
+
+.dark body {
+  background-color: #0B0909;
+}
+.dark form {
+  color: #F3F3F4;
+  background-color: #201b1a;
+}
+.dark form input {
+  border: 1px solid rgb(8, 8, 8);
+}
+.dark input[type=submit] {
+  background-color: #0B0909;
+  color: #F3F3F4;
+}
+.dark input[type=submit]:hover, .dark button:hover {
+  color: #201b1a;
+  background-color: #F3F3F4;
+}
+.dark button {
+  background-color: #201b1a;
+  color: #F3F3F4;
+  border: 1px solid rgb(8, 8, 8);
+}
+
+.light body {
+  background-color: #F3F3F4;
+}
+.light form {
+  color: #0B0909;
+  background-color: #F3F3F4;
+}
+.light form input {
+  border: 1px solid rgb(8, 8, 8);
+}
+.light input[type=submit] {
+  background-color: #F3F3F4;
+  color: #0B0909;
+}
+.light input[type=submit]:hover, .light button:hover {
+  color: #F3F3F4;
+  background-color: #0B0909;
+}
+.light button {
+  background-color: #F3F3F4;
+  color: #0B0909;
+  border: 1px solid rgb(8, 8, 8);
+}
+
+body {
+  min-height: 100vh;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1.3rem 2rem;
+  margin: 1rem 4rem;
+  box-shadow: 6px 6px 2px black;
+}
+
+.theme-select {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#msg {
+  color: #F3F3F4;
+  visibility: hidden;
+  position: absolutea;
+  top: 10px;
+  left: 88%;
+  padding: 0.6rem 2rem;
+  border-radius: 4px;
+}
+
+.success {
+  background-color: #129412;
+}
+
+.fail {
+  background-color: #fc1919;
+}
+
+/*# sourceMappingURL=style.css.map */

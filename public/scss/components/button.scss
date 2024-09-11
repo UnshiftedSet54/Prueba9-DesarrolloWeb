@@ -1,0 +1,13 @@
+@import '../vendors/pineapple-sass';
+
+.theme-button{
+  padding: 0.2rem 0.8rem;
+  margin: 1.1rem 1rem;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 4px;
+  @include transition(all 0.1s linear);
+}
+
+.theme-button:hover{
+  cursor: pointer;
+}

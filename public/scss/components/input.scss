@@ -1,0 +1,33 @@
+@import '../vendors/pineapple-sass';
+
+.form-input{
+  margin: 0.5rem auto;
+
+  label{
+    display: block;
+  }
+
+  input{
+    margin: 0.2rem 0;
+    height: 1.2rem;
+    width: 100%;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 1px 1px 2px black;
+    outline: none;
+    @include transition(all 0.1s linear);
+  }
+
+  label, input{
+    font-size: 0.9rem;
+  }
+
+  input[type="submit"]{
+    height: 100%;
+    width: 100%;
+  }
+
+  input[type="submit"]:hover{
+    cursor: pointer;
+  }
+}

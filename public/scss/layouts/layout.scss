@@ -1,0 +1,9 @@
+@import '../abstracts/mixins.scss';
+
+body, .theme-select{
+  @include flex(wrap, center, center);
+}
+
+.container{
+  margin: 2rem auto;
+}

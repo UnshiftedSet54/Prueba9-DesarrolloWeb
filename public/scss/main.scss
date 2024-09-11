@@ -1,0 +1,43 @@
+@import './base/base.scss';
+@import './abstracts/mixins.scss';
+@import './components/input.scss';
+@import './components/button.scss';
+@import './layouts/layout.scss';
+@import './themes/dark.scss';
+@import './themes/light.scss';
+
+body{
+  min-height: 100vh;
+}
+
+form{
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1.3rem 2rem;
+  margin: 1rem 4rem;
+  box-shadow: 6px 6px 2px black;
+}
+
+.theme-select{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#msg{
+  color: #F3F3F4;
+  visibility: hidden;
+  position: absolutea ;
+  top: 10px;
+  left: 88%;
+  padding: 0.6rem 2rem;
+  border-radius: 4px;
+}
+
+.success{
+  background-color: #129412;
+}
+
+.fail{
+  background-color: #fc1919;
+}
