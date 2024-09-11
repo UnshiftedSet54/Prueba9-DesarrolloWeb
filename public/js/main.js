@@ -42,7 +42,7 @@ document.getElementById('form').onsubmit = async (event) => {
   .then(response => response.json())
   .then(data => {
     setAlert('Success!', 'success')
-    console.log(data.msg)
+    console.log(data)
   })
   .catch(error => {
     setAlert('Fail!', 'fail')
